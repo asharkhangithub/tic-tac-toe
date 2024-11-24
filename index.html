@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <button id="themeToggleBtn" class="theme-btn">Switch to Dark Mode</button>
+    <div id="winnerModal" class="modal hide">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="g-over">Game Over</h2>
+            <p id="winnerMessage">Congratulations, the winner is <span id="winnerName"></span>!</p>
+            <button id="new-btn">Play Again</button>
+        </div>
+    </div>
+
+    <div id="scoreboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeScoreboardModal">&times;</span>
+            <h2>Scoreboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Wins</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="playerXName">Player X</td>
+                        <td id="playerXScore">0</td>
+                    </tr>
+                    <tr>
+                        <td id="playerOName">Player O</td>
+                        <td id="playerOScore">0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="closeScoreboardBtn">Close</button>
+        </div>
+    </div>
+ 
+    <div id="gameModeScreen" class="modal show">
+        <div class="modal-content">
+            <h2>Select Game Mode</h2>
+            <button id="playerVsPlayerBtn">Player vs Player</button>
+            <button id="playerVsComputerBtn">Player vs Computer</button>
+        </div>
+    </div>
+    
+    
+
+    <h1>TIC TAC TOE</h1>
+    <div class="container" data-aos="zoom-out-right">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <div id="winning-line"></div>
+    </div>
+    <div id="btn">
+        <button>RESET BUTTON</button>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h3>MADE BY ASHAR KHAN & SYED HUSSAIN KAZMI</h3>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
